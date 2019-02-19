@@ -1,0 +1,14 @@
+@using Parcels.Models;
+
+<h1>Parcels</h1>
+
+    <p>Description: @Model.GetDescription()</p>
+    <p>Length: @Model.GetLength()</p>
+    <p>Width: @Model.GetWidth()</p>
+    <p>Weight: @Model.GetWeight()</p>
+    <p>Height: @Model.GetHeight()</p>
+    <p>Volume: @Model.GetVolume(@Model.GetLength(), @Model.GetWidth(), @Model.GetHeight())</p>
+    <p>CostToShip: @Model.GetCostToShip(@Model.GetWeight())</p>
+
+
+<a href="/parcels/new">Add a new parcel.</a>
